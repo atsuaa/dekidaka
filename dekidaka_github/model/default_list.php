@@ -1,0 +1,2 @@
+<?php
+$records = $db->select();

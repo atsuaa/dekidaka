@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+html{height: 100%;}
+html *{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: #EEE;
+}
+a{color: blue;}
+h3{
+  margin: auto 5px;
+  padding: 5px 5px 0;
+  border-bottom: 1px solid silver;
+}
+.chart-container{
+  margin: auto;
+  width: 95%;
+  height: auto;
+}
+
+.mobile{
+  background-color: white;
+}
+
+.mobile *{
+  width: 100%;
+  border-bottom: 1px solid #EEE;
+}
+
+.new{
+  padding-left: 24px;
+  background-position: left;
+  background-image: url('../images/add_circle_outline-24px.svg');
+  background-repeat: no-repeat;
+  margin: 8px 10px;
+  fill: blue;
+}
+.new button{
+  color: blue;
+  font-weight: bold;
+}
+
+#title-select{
+  display: inline-block;
+}
+#title-select button{
+  margin: 2px 5px;
+  padding: 0 3px;
+  width: auto;
+  background-color: #EEE;
+  border-radius: 3px;
+}
+
+ul{
+  margin: 0;
+  padding-left: 5px;
+}
+li{
+  border-bottom: 1px dotted #EEE;
+  background-color: white;
+  list-style-type: none;
+  position: relative;
+  transition-duration:0.8s;
+  transition-timing-function: ease;
+}
+li p{
+  margin: 0;
+}
+.li-box{
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.li-l{
+flex: auto;
+}
+.li-l-b{
+  color: silver;
+  display: flex;
+}
+.li-l-b div{
+  flex: 33%;
+}
+.li-l-b span{
+  color: green;
+}
+.li-r{
+  border-left: 2px solid #EEE;
+  padding-left: 5px;
+  flex: 0 0 24%;
+  position: relative;
+}
+.li-r span{
+  font-size: 20px;
+}
+.per{
+  color: silver;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sec{
+  margin: auto 10px;
+  border-left: 1 dotted #EEE;
+}
+
+.up-del{
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  position: absolute;
+  left: -40%;
+  display: flex;
+}
+.up-del div{
+  width: 50%;
+  padding: 6%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.update{
+  background-color: #096;
+}
+.delete{
+  background-color: #F66;
+}
+.anime{
+  transform: translateX(40%);
+}
+.opa{
+  opacity: 1;
+}
+
+
+#foot {
+  width: 100%;
+  height: 60px;
+  background-image: url('../images/back-sea.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  font-size: 24px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  z-index: 9;
+}
+footer{
+  height: 60px;
+}
+
+.f-l-select{
+  border: 2px solid silver;
+  border-radius: 5px;
+  padding: 10px 5px;
+  background-color: white;
+  position: absolute;
+  bottom: 65px;
+  left: 5%;
+  display: none;
+}
+#foot a{
+  padding: 0 20px;
+  border-bottom: 2px solid silver;
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+}
+.f-r-select{
+  border: 2px solid silver;
+  border-radius: 5px;
+  padding: 10px 5px;
+  background-color: white;
+  position: absolute;
+  bottom: 65px;
+  left: 65%;
+  display: none;
+}
+.f-l{
+  width: 60%;
+  height: 100%;
+  padding: 12px;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.6), rgba(255,255,255,1) 40%, rgba(255,255,255,0.6));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.6), rgba(255,255,255,1) 40%, rgba(255,255,255,0.6));
+  background: linear-gradient(left, rgba(255,255,255,0.6), rgba(255,255,255,1) 40%, rgba(255,255,255,0.1));
+  flex: auto;
+}
+.f-r{
+  width: 40%;
+  height: 100%;
+  padding: 12px;
+  border-left: 2px solid #EEE;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.6), rgba(255,255,255,1) 40%, rgba(255,255,255,0.6));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.6), rgba(255,255,255,1) 40%, rgba(255,255,255,0.6));
+  background: linear-gradient(left, rgba(255,255,255,0.6), rgba(255,255,255,1) 40%, rgba(255,255,255,0.6));
+  flex: auto;
+}
+#foot span{
+  padding: 10px;
+}
+
+#add{
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+  header{display: none;}
+  input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  padding-left: 8px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 2em;
+  font-size: 16px;
+}
+}

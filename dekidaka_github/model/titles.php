@@ -1,0 +1,2 @@
+<?php
+$titles = $db->selectTitle();
