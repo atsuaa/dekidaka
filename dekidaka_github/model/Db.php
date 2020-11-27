@@ -8,9 +8,6 @@ class Db
 
   function __construct()
   {
-    // $dsn= 'mysql:dbname=ataruproject_dek; host=183.181.97.207';
-    // $usr= 'ataruproject_dek';
-    // $passwd= '98410427';
     $dsn= '';
     $usr= '';
     $passwd= '';
